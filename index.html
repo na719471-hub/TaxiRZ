@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Hero Design */
         .hero-new {
             height: 65vh;
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('black-yellow-sign-taxi-night-placed-top-car.jpg');
@@ -19,20 +18,13 @@
             text-align: center;
             color: white;
             position: relative;
+            margin-top: 80px; /* Platz für Header */
         }
-
-        .hero-content-new {
-            z-index: 2;
-            padding: 20px;
-        }
-
         .hero-content-new h1 {
             font-size: clamp(2.5rem, 8vw, 4rem);
             margin-bottom: 15px;
             text-shadow: 2px 2px 15px rgba(0,0,0,0.9);
         }
-
-        /* Buchungs-Container mit Scrollfunktion */
         .booking-section {
             margin-top: -80px;
             position: relative;
@@ -42,7 +34,6 @@
             margin-right: auto;
             padding: 0 15px 50px 15px;
         }
-
         .booking-card {
             background: white;
             padding: 20px;
@@ -50,32 +41,20 @@
             box-shadow: 0 15px 45px rgba(0,0,0,0.3);
             border: 2px solid var(--primary);
         }
-
-        .booking-card h2 {
-            text-align: center;
-            margin-bottom: 15px;
-            color: var(--dark);
-            font-size: 1.6rem;
-        }
-
-        /* Das Formular-Fenster */
         .form-scroll-container {
-            height: 500px; /* Feste Höhe für Kompaktheit */
-            overflow-y: auto; /* Scrollbar innerhalb des Formulars */
+            height: 500px;
+            overflow-y: auto;
             border-radius: 8px;
             border: 1px solid #eee;
             padding: 5px;
             background: #f9f9f9;
         }
-
-        /* Warum Insel Taxi - 6er Grid */
         .reasons-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
             margin-top: 40px;
         }
-
         .reason-item {
             background: #fff;
             padding: 25px;
@@ -85,22 +64,9 @@
             text-align: left;
             border-bottom: 4px solid var(--primary);
         }
-
-        .reason-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .reason-item i {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .reason-item h3 {
-            margin-bottom: 10px;
-            color: var(--dark);
-        }
+        .reason-item:hover { transform: translateY(-5px); }
+        .reason-item i { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; display: block; }
+        .reason-item h3 { margin-bottom: 10px; color: var(--dark); }
     </style>
 </head>
 <body>
@@ -129,7 +95,7 @@
 
     <div class="booking-section" id="booking">
         <div class="booking-card">
-            <h2><i class="fas fa-calendar-check"></i> Online Buchungsanfrage</h2>
+            <h2 style="text-align: center; margin-bottom: 15px;"><i class="fas fa-calendar-check"></i> Online Buchungsanfrage</h2>
             <div class="form-scroll-container">
                 <script type="text/javascript" src="https://form.jotform.com/jsform/260215820547049"></script>
             </div>
@@ -168,7 +134,7 @@
             </div>
             <div class="reason-item">
                 <i class="fas fa-map-marked-alt"></i>
-                <h3>Regionale & Bundesweite Expertise</h3>
+                <h3>Regionale Expertise</h3>
                 <p>In Ratzeburg und im Herzogtum Lauenburg kennen wir jede Abkürzung, um Sie pünktlich ans Ziel zu bringen.</p>
             </div>
             <div class="reason-item">
