@@ -6,6 +6,21 @@
     <title>Tarife | Insel Taxi Ratzeburg</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Spezifische Styles für die Tabelle */
+        .table-container {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        th, td { padding: 15px 20px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background: var(--dark); color: #fff; }
+        tr:last-child td { border-bottom: none; }
+        tr:hover { background-color: #f9f9f9; }
+        .price { font-weight: 700; color: var(--dark); text-align: right; }
+    </style>
 </head>
 <body>
 
@@ -17,14 +32,14 @@
             <ul>
                 <li><a href="index.html">Start</a></li>
                 <li><a href="leistungen.html">Leistungen</a></li>
-                <li><a href="tarife.html">Tarife</a></li>
+                <li><a href="tarife.html" class="active">Tarife</a></li>
                 <li><a href="flotte.html">Flotte</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="section">
+    <section class="section" style="margin-top: 80px;">
         <div class="section-title">
             <h2>Unsere Tarife</h2>
             <p>Transparente Preise gemäß der offiziellen Taxenordnung.</p>
@@ -85,13 +100,11 @@
         <div class="footer-grid">
             <div class="footer-col">
                 <h4>Insel Taxi Ratzeburg</h4>
-                <p>Ihr Partner für Mobilität in Ratzeburg.</p>
-                <br>
                 <p>Inhaber: Naeem Ahmed</p>
                 <p>Zittschower Weg 11a<br>23909 Ratzeburg</p>
             </div>
             <div class="footer-col">
-                <h4>Links</h4>
+                <h4>Menü</h4>
                 <ul>
                     <li><a href="leistungen.html">Leistungen</a></li>
                     <li><a href="tarife.html">Tarife</a></li>
@@ -100,11 +113,10 @@
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Zahlungsarten</h4>
-                <p><i class="fas fa-money-bill-wave"></i> Barzahlung</p>
-                <p><i class="fas fa-credit-card"></i> EC-Karte</p>
+                <h4>Zahlung</h4>
+                <p><i class="fas fa-money-bill-wave"></i> Bar</p>
+                <p><i class="fas fa-credit-card"></i> Karte</p>
                 <p><i class="fab fa-paypal"></i> PayPal</p>
-                <p><i class="fas fa-file-invoice"></i> Rechnung</p>
             </div>
         </div>
         <div class="footer-bottom">
