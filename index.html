@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insel Taxi Ratzeburg | Ihr Partner für Mobilität</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Hero Design */
+        .hero-new {
+            height: 65vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('black-yellow-sign-taxi-night-placed-top-car.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content-new {
+            z-index: 2;
+            padding: 20px;
+        }
+
+        .hero-content-new h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.9);
+        }
+
+        /* Buchungs-Container mit Scrollfunktion */
+        .booking-section {
+            margin-top: -80px;
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 15px 50px 15px;
+        }
+
+        .booking-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.3);
+            border: 2px solid var(--primary);
+        }
+
+        .booking-card h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--dark);
+            font-size: 1.6rem;
+        }
+
+        /* Das Formular-Fenster */
+        .form-scroll-container {
+            height: 500px; /* Feste Höhe für Kompaktheit */
+            overflow-y: auto; /* Scrollbar innerhalb des Formulars */
+            border-radius: 8px;
+            border: 1px solid #eee;
+            padding: 5px;
+            background: #f9f9f9;
+        }
+
+        /* Warum Insel Taxi - 6er Grid */
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .reason-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            text-align: left;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .reason-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .reason-item i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .reason-item h3 {
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Insel <span>Taxi</span></a>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="menu-toggle"><i class="fas fa-bars"></i></label>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Start</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="tarife.html">Tarife</a></li>
+                <li><a href="flotte.html">Flotte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-new">
+        <div class="hero-content-new">
+            <h1>Zuverlässig & Schnell</h1>
+            <p>Ihr Taxi-Service für Ratzeburg und die gesamte Region.</p>
+        </div>
+    </section>
+
+    <div class="booking-section" id="booking">
+        <div class="booking-card">
+            <h2><i class="fas fa-calendar-check"></i> Online Buchungsanfrage</h2>
+            <div class="form-scroll-container">
+                <script type="text/javascript" src="https://form.jotform.com/jsform/260215820547049"></script>
+            </div>
+            <p style="text-align: center; font-size: 0.8rem; color: #777; margin-top: 10px;">
+                <i class="fas fa-info-circle"></i> Bitte füllen Sie alle Pflichtfelder im Formular aus.
+            </p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="section-title">
+            <h2>Warum Insel Taxi Ratzeburg?</h2>
+            <p>Sechs gute Gründe, warum wir die richtige Wahl für Ihre Fahrt sind.</p>
+        </div>
+        
+        <div class="reasons-grid">
+            <div class="reason-item">
+                <i class="fas fa-clock"></i>
+                <h3>24/7 Verfügbarkeit</h3>
+                <p>Egal ob mitten in der Nacht oder am frühen Morgen – wir sind immer für Sie einsatzbereit.</p>
+            </div>
+            <div class="reason-item">
+                <i class="fas fa-user-tie"></i>
+                <h3>Professionelle Fahrer</h3>
+                <p>Unsere Fahrer sind ortskundig, freundlich und besitzen langjährige Erfahrung im Straßenverkehr.</p>
+            </div>
+            <div class="reason-item">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>Spezialist für Krankenfahrten</h3>
+                <p>Wir begleiten Sie sicher zu Ärzten und Kliniken und kümmern uns um die Abrechnung mit Ihrer Kasse.</p>
+            </div>
+            <div class="reason-item">
+                <i class="fas fa-car-battery"></i>
+                <h3>Moderner Fuhrpark</h3>
+                <p>Unsere Fahrzeuge sind top gepflegt, sauber und technisch auf dem neuesten Stand für Ihre Sicherheit.</p>
+            </div>
+            <div class="reason-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Regionale & Bundesweite Expertise</h3>
+                <p>In Ratzeburg und im Herzogtum Lauenburg kennen wir jede Abkürzung, um Sie pünktlich ans Ziel zu bringen.</p>
+            </div>
+            <div class="reason-item">
+                <i class="fas fa-wallet"></i>
+                <h3>Faire Preisgestaltung</h3>
+                <p>Keine versteckten Kosten. Wir fahren strikt nach der offiziellen Taxenordnung – transparent und ehrlich.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="floating-container">
+        <a href="tel:04541802080" class="float-btn call-btn"><i class="fas fa-phone"></i></a>
+        <a href="https://wa.me/491739189239" target="_blank" class="float-btn wa-btn"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Insel Taxi Ratzeburg</h4>
+                <p>Ihr Mobilitätspartner für Ratzeburg.</p>
+                <br>
+                <p>Inhaber: Naeem Ahmed</p>
+                <p>Zittschower Weg 11a<br>23909 Ratzeburg</p>
+            </div>
+            <div class="footer-col">
+                <h4>Menü</h4>
+                <ul>
+                    <li><a href="leistungen.html">Leistungen</a></li>
+                    <li><a href="tarife.html">Tarife</a></li>
+                    <li><a href="flotte.html">Flotte</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Zahlung</h4>
+                <p><i class="fas fa-money-bill-wave"></i> Bar</p>
+                <p><i class="fas fa-credit-card"></i> Karte</p>
+                <p><i class="fab fa-paypal"></i> PayPal</p>
+                <p><i class="fas fa-file-invoice"></i> Rechnung</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Insel Taxi Ratzeburg. Alle Rechte vorbehalten.</p>
+            <br>
+            <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
+        </div>
+    </footer>
+
+</body>
+</html>
