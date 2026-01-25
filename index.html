@@ -36,19 +36,16 @@
         }
         .booking-card {
             background: white;
-            padding: 20px;
+            padding: 30px; /* Etwas mehr Padding für Luft */
             border-radius: 15px;
             box-shadow: 0 15px 45px rgba(0,0,0,0.3);
             border: 2px solid var(--primary);
+            text-align: center; /* Zentriert den Inhalt */
+            position: relative;
+            overflow: hidden; /* Für den Shine-Effekt wichtig */
         }
-        .form-scroll-container {
-            height: 500px;
-            overflow-y: auto;
-            border-radius: 8px;
-            border: 1px solid #eee;
-            padding: 5px;
-            background: #f9f9f9;
-        }
+        /* Altes Form-Container CSS kann ignoriert werden, da Klasse entfernt */
+        
         .reasons-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -95,12 +92,33 @@
 
     <div class="booking-section" id="booking">
         <div class="booking-card">
-            <h2 style="text-align: center; margin-bottom: 15px;"><i class="fas fa-calendar-check"></i> Online Buchungsanfrage</h2>
-            <div class="form-scroll-container">
-                <script type="text/javascript" src="https://form.jotform.com/jsform/260215820547049"></script>
+            <div class="badge-24h">
+                <i class="fas fa-clock"></i> 24h Service
             </div>
-            <p style="text-align: center; font-size: 0.8rem; color: #777; margin-top: 10px;">
-                <i class="fas fa-info-circle"></i> Bitte füllen Sie alle Pflichtfelder im Formular aus.
+
+            <h2 class="booking-headline">Ihr Taxi wartet schon!</h2>
+            
+            <div class="usp-container">
+                <div class="usp-single">
+                    <i class="fas fa-users"></i>
+                    <span>+3000 zufriedene Kunden</span>
+                </div>
+                <div class="usp-single">
+                    <i class="fas fa-star"></i>
+                    <span>5 Sterne Service</span>
+                </div>
+                <div class="usp-single">
+                    <i class="fas fa-history"></i>
+                    <span>10+ Jahre Erfahrung</span>
+                </div>
+            </div>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScu4GUsRqvb-L4MRP1dBOnfcO6IkyAOKVl9mnjv6cEdzAQ_sQ/viewform?usp=dialog" class="btn btn-cta pulse-animation">
+                JETZT BUCHEN <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">
+                <i class="fas fa-lock"></i> Einfach, sicher & schnell online bestellen.
             </p>
         </div>
     </div>
