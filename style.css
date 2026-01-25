@@ -255,3 +255,111 @@ footer {
 }
 
 .footer-bottom a { color: #aaa; margin: 0 10px; }
+
+/* =========================================
+   NEUES BOOKING DESIGN (Hinzugefügt)
+   ========================================= */
+
+/* Der 24h Service Badge ganz oben */
+.badge-24h {
+    display: inline-block;
+    background: #000;
+    color: #FFD700;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.booking-headline {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Container für die 3 USPs (Kunden, Sterne, Erfahrung) */
+.usp-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.usp-single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    min-width: 140px;
+    flex: 1;
+}
+
+.usp-single i {
+    color: #FFD700; /* Taxigelb */
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.usp-single span {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Der große Action Button */
+.btn-cta {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #FFD700;
+    color: #000;
+    font-size: 1.3rem;
+    padding: 18px 20px;
+    border-radius: 50px; /* Runde Ecken wirken moderner */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-cta:hover {
+    background: #ffcc00;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(255, 215, 0, 0.6);
+}
+
+/* Pulsierende Animation für den Button */
+.pulse-animation {
+    animation: pulse-yellow 2s infinite;
+}
+
+@keyframes pulse-yellow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(255, 215, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+    }
+}
+
+/* Anpassung für Handy (kleinerer Text) */
+@media (max-width: 500px) {
+    .usp-container {
+        flex-direction: column;
+    }
+    .booking-headline {
+        font-size: 1.5rem;
+    }
+}
